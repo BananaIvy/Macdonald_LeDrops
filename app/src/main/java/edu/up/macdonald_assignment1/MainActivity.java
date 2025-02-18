@@ -1,6 +1,7 @@
 package edu.up.macdonald_assignment1;
 
 import android.os.Bundle;
+import android.view.SurfaceView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;

@@ -8,9 +8,10 @@ package edu.up.macdonald_assignment1;
 import android.view.MotionEvent;
 import android.view.View;
 
-public class Controller{
+public class Controller {
 
     public Controller(View hi) {
 
     }
+
 }

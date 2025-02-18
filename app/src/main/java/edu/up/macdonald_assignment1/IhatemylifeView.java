@@ -16,7 +16,7 @@ import java.util.Random;
  *  2.6.2025
  */
 
-public class View extends SurfaceView {
+public class IhatemylifeView extends SurfaceView {
 
     //Instances
     Random r = new Random();
@@ -25,12 +25,10 @@ public class View extends SurfaceView {
     int fadedWhite = 0x7AFFFFFF;
 
     //THE CONSTRUCTOR THAT WE NEED TO SET TO DRAW
-    public View(Context context, AttributeSet attrs) {
+    public IhatemylifeView(Context context, AttributeSet attrs) {
         super(context, attrs);
         setWillNotDraw(false);
 
-        Controller ctrl = new Controller(this);
-       this.setOnTouchListener(ctrl);
     }
 
     //Main draw method
