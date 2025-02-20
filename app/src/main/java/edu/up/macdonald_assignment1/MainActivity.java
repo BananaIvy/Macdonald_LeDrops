@@ -2,6 +2,7 @@ package edu.up.macdonald_assignment1;
 
 import android.os.Bundle;
 import android.view.SurfaceView;
+import android.widget.SeekBar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
+        IhatemylifeView view = findViewById(R.id.ihatemylifeview);
+        Controller controller = new Controller(view);
+        SeekBar xCoords = findViewById(R.id.xSeekBar);
+        SeekBar yCoords = findViewById(R.id.ySeekbar);
 
+        xCoords.setOnSeekBarChangeListener(controller);
+        yCoords.setOnSeekBarChangeListener(controller);
     }
 }
